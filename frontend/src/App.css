@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  background: #f7f1e8;
+  color: #4b382a;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.app-shell {
+  max-width: 1180px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.topbar, .panel, .summary-card {
+  background: #fffdf9;
+  padding: 24px;
+  margin-bottom: 22px;
+  border: 1px solid #e8d7c3;
+  border-radius: 18px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+h1, h2, h3, .brand {
+  color: #6f4e37;
+}
+
+input, select {
+  padding: 12px;
+  border: 1px solid #d8c2aa;
+  border-radius: 8px;
+  background: #fffaf4;
+  color: #4b382a;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #6f4e37;
+  color: white;
+  cursor: pointer;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 14px;
+  border-bottom: 1px solid #e8d7c3;
+  text-align: left;
+}
+
+th {
+  background: #eee2d3;
+  color: #6f4e37;
+}
+
+@media (max-width: 700px) {
+  .content-grid, .summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
